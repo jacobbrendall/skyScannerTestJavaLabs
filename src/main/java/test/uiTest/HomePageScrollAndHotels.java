@@ -6,7 +6,7 @@ import pageObjects.Base;
 
 import java.awt.*;
 
-public class HomePageScroll extends Base {
+public class HomePageScrollAndHotels extends Base {
 
     @Test
     public void scrollDownOnHomePageAndHotelsShouldBeDisable() throws AWTException, InterruptedException {

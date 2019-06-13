@@ -11,7 +11,7 @@ public class HomePage {
     public WebElement logo;
 
     @FindBy(className = "CultureSelectorButton_CultureSelectorButton__labels__bCs5I")
-    public WebElement Currency;
+    private WebElement Currency;
 
     @FindBy(xpath = "//h4[contains(text(),'Hotels')]")
     public WebElement hotels;
