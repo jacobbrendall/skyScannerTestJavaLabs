@@ -1,0 +1,118 @@
+USER Story
+Section 1
+=========================================
+
+TC-1001
+1) GIVEN user launches the browser
+2) WHEN user lands on https://www.skyscanner.com/
+3) THEN “Skyscanner” image appears on the left corner of the webpage
+
+TC-1002
+1) GIVEN user lands on https://www.skyscanner.com/
+2) WHEN user clicks on log in button
+3) AND user clicks the green email button
+4) AND user put correct/incorrect email
+5) THEN user’s email is displayed on the left corner/ “ensure email address invalid” is displayed
+
+TC-1003
+1) GIVEN user on flights page
+2) WHEN user types the name of the city/airport into from and to
+3) AND user clicks on search button
+4) THEN from and to cities should displayed
+
+TC-1004
+1)	GIVEN user on flights page
+2)	WHEN user clicks on one way
+3).  Validate "one way" is written in return date box
+
+TC-1005
+1)	GIVEN user is on flights page
+2)	WHEN user enter from/to airports
+3)	AND user clicks cabin class and travelers button
+4)	AND user picks two kids and puts respective ages
+5)	AND user clicks on done button
+6)	THEN three travelers are displayed on cabin class button
+
+TC-1006-1
+1)	GIVEN user is on flights page
+2)	WHEN user enter from/to airports
+3)	AND user clicks cabin class and travelers button
+4)	AND user clicks cabin class and selects business class
+5)	AND user clicks on done button
+6)	THEN business class is displayed on cabin class button
+
+TC-1006-2
+1)	GIVEN user is on flights page
+2)	WHEN user enter from/to airports
+3)	AND user clicks cabin class and travelers button
+4)	AND user clicks cabin class and picks all cabin classes
+5)	THEN all types of cabin classes are verified
+
+USER Story
+Section 2
+=========================================
+
+TC-2001
+1)	GIVEN when user on flights page
+2)	When user enters from airport
+3)	AND user enters to airport
+4)	AND user puts system date for departure
+5)	Then before dates then current date should be unclickable
+
+TC-2002
+1)	GIVEN when user on flights page
+2)	When user enters from airport
+3)	AND user enters to airport
+4)	AND user puts any date for departure
+5)	AND user puts a return date between current date and departure date
+6)	THEN departure date should be equal to return date
+
+TC-2003
+1)	GIVEN user on landing page
+2)	When user clicks currency
+3)	AND user selects language as Turkey
+4)	AND user selects country as Germany
+5)	AND user clicks on save button
+6)	THEN German flag should be displayed on currency tab
+7)	THEN “Oturum Ac” should be displayed on Login button.
+
+TC-2004-1
+1)	GIVEN when user on landing page
+2)	When user clicks on login
+3)	AND user clicks on green mail button
+4)	AND user puts his email
+5)	THEN user’s email should be in proper/improper email format
+6)	THEN Continue button. Should be clickable/unclickable.
+
+TC-2004-2
+1)	GIVEN when user does TC 2004-1
+2)	When user puts proper password
+3)	THEN “That’s it you are good to go” displayed”
+
+TC-2004-3
+1)	GIVEN when user does TC 2004-2
+2)	When user puts 8 letters password
+3)	THEN “Almost there” is displayed
+4)	THEN 8 or more characters should be checked
+5)	THEN other password requirements should be unchecked
+
+TC-2005
+1)GIVEN user on landing page
+2) WHEN User scrolls down to the “Plan Your Perfect Trip” location
+3) THEN HOTELS logo should be displayed
+4) THEN import these links into a file
+5) THEN some links under hotels should be displayed
+
+TC-2006
+1) GIVEN user on hotels page
+2) WHEN user enters the details
+3) AND clicks on search
+4) AND  user filters the  results as per price from low to high
+5) THEN prices displayed from low to high
+
+TC-2007
+1) GIVEN user on car rentals page
+2) WHEN user enters the details
+3) AND clicks on search
+4) AND user filters on full size
+5) THEN user is able to see the least, the most and the difference in prices
