@@ -1,0 +1,68 @@
+--------------------------------------- framework roadmap -----------------------------------------
+Scroll
+Logging
+Selenium grid
+Alert management
+Wait utils with js
+System variables
+Soft assertions
+Db prepared statement
+Read yaml with object mapper....YAMLfactory .... Bu data driven optionlari basligi altina konsun
+Ayni baslik alyinda mongodb, Jason, excel de olsun
+
+1. deserializing / serializing and array of objects in JSON
+2. h2 in memory database usage for test data management
+3. remote site connection using jsch
+4. remote site connection and interactive command entry using expectit
+
+Email server a gelen Email I validate etme
+Mongodb ye baglanarak test data alma
+7. Read afile content and look for text in it
+----------------------------------------- Principle ----------------------------------------------
+her package'in kendi Base'i extend edilecek.
+
+
+
+
+-------------------------------------                  --------------------------------------------
+Java Test Automation From Zero to Hero
+IDE setup (intellij, maven, java, git, git bash, toad, winscp, putty, )
+GitHub account
+Java exam
+SQL queries
+DB connection/statement/uri olusturma
+Selenium driver objectini anlama(WebDriver, ChromeDriver, GeckDriver)
+
+Selenium
+	• Handling dynamic tables
+	• Page Factory
+	• Select/Radio button/
+
+Serialization/deserialization (resources taki JSON file yapilacak)
+Learn to use Postman and SOAP UI
+Ws icin CRUD methodlari yazilmasi… (GET haricinde test edecek API yok)
+Ileri WS (gzip, content type etc.)
+Xpath parameterization
+Enums
+Strategy pattern using interfaces
+Junit rules (what are they used for?)
+Farkli driverlar headless vs. testing
+Create a webdriver factory
+Environment variables kullanmma (system.get property)
+Config.properties ile farkli environmentlerle test yapma (kolay onemli)
+Get envrionment info (unix, linux, windows)… what will change?
+Suite olusturma (junit and testng) ve before after lar
+Jenkins job olusturma-groovy (herkes kendi makinesine kursun… github ile birlestirme.. Elzem degil… test lead hazriladigi parameterized joblari run ediyorum deme bile yeterli…aslinda AWS te kurmak lazim jenkinsi)
+Design patterns(builder, singleton, abstract)
+Multi module project design and advanced Maven
+Remote repository kullanma (mymvnrepo gibi- baglandim ama calismiyor)
+ALM-JIRA integration (mumkun degil sanirim)
+Logging
+Reporting
+ServerUtils jsch
+TestNG ITestContext and Method Listeners, testng.xml hierarchy. Thread count (in junit?)
+Aws/azure/microservices
+
+Data Structures and algortithms Goodrich - java bilen kisi okuyacak
+Daniel Liang Introducton to java
+Html css ogrenilebilir + javascript ile front end devel0per oluyor
