@@ -1,0 +1,15 @@
+/target/
+pom.xml
+.idea
+
+*.iws
+*.iml
+*.ipr
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+*.log
+*.txt
