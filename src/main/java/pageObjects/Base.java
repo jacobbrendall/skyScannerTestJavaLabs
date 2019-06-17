@@ -1,10 +1,11 @@
 package pageObjects;
 
-import org.junit.jupiter.api.*;
+import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -13,11 +14,12 @@ import java.util.concurrent.TimeUnit;
 
 public class Base {
     public WebDriver driver;
-
-    public LoginPage loginPage;
+    WebDriverWait wait;
+    public CarRentalPage carRentalPage;
     public FlightsPage flightsPage;
-    public SignUpPage signUpPage;
     public HomePage homePage;
+    public LoginPage loginPage;
+    public SignUpPage signUpPage;
 
     public Properties properties() throws IOException {
         Properties prop = new Properties();
@@ -34,8 +36,6 @@ public class Base {
                 System.setProperty("webdriver.chrome.driver", "resources/chromedriver.exe");
                 this.driver = new ChromeDriver();
                 driver.get(properties().getProperty("url"));
-
-
                 break;
 
             case "firefox":
@@ -44,18 +44,19 @@ public class Base {
                 driver.get(properties().getProperty("url"));
                 break;
         }
-        driver.manage().timeouts().implicitlyWait(3000, TimeUnit.MILLISECONDS);
+        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         driver.manage().window().maximize();
         driver.manage().deleteAllCookies();
-        loginPage = new PageFactory().initElements(driver, LoginPage.class);
+        carRentalPage = new PageFactory().initElements(driver, CarRentalPage.class);
         flightsPage = new PageFactory().initElements(driver, FlightsPage.class);
-        signUpPage = new PageFactory().initElements(driver, SignUpPage.class);
         homePage = new PageFactory().initElements(driver, HomePage.class);
+        loginPage = new PageFactory().initElements(driver, LoginPage.class);
+        signUpPage = new PageFactory().initElements(driver, SignUpPage.class);
     }
 
-    @AfterEach
+   /* @AfterEach
     public void driverQuit() throws Exception {
         driver.close();
         driver.quit();
-    }
+    }*/
 }

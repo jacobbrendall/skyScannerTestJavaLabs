@@ -1,4 +1,4 @@
-package test.uiTest;
+package test.uiTest.section1;
 
 import org.junit.Assert;
 import org.junit.jupiter.api.DisplayName;

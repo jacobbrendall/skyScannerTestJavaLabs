@@ -1,4 +1,4 @@
-package test.uiTest;
+package test.uiTest.section1;
 
 import org.junit.Assert;
 import org.junit.jupiter.api.*;
@@ -8,7 +8,7 @@ import java.io.IOException;
 
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 public class LoginPage extends Base {
-    @DisplayName("Test Case TC -1002 Login Page Positive positive Input")
+    @DisplayName("TC -1002 Login Page Login Should Successful With positive Input")
     @Test
     @Order(1)
     public void loginShouldSuccessfulWithPositiveData() throws Exception {
@@ -16,7 +16,7 @@ public class LoginPage extends Base {
         Assert.assertEquals("javatest@gmx.net", loginPage.getLogInSuccessMessage());
     }
 
-    @DisplayName("Test Case TC -1002 Login Page Negative Input")
+    @DisplayName("TC -1002 Login Page Login Should Fail With Negative Input")
     @Test
     @Order(2)
     public void loginShouldFailWithNegativeData() throws IOException {
