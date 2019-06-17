@@ -33,7 +33,7 @@ public class SignUpPage extends Base {
     public WebElement signUpFailedPasswordEntry;
 
     @FindBy(xpath = "//button[@class='bpk-button-aTnwj ProgressionButton__button-3U-H6']")
-    public WebElement createAccountButton;
+    private WebElement createAccountButton;
 
     public String signUpSuccessfulPasswordEntry() {
         return signUpSuccessfulPasswordEntry.getText();
@@ -61,6 +61,4 @@ public class SignUpPage extends Base {
         signUpContinue.click();
         signUpPassword.sendKeys("Abcd123");
     }
-
-
 }

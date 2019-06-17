@@ -1,4 +1,4 @@
-package test.uiTest;
+package test.uiTest.section1;
 
 import org.junit.Assert;
 import org.junit.jupiter.api.DisplayName;
@@ -8,7 +8,7 @@ import pageObjects.Base;
 import java.io.IOException;
 
 public class FlightsOneWay extends Base {
-    @DisplayName("TC-1004 Flights Page  One Way Button Should Activated")
+    @DisplayName("TC-1004 Flights Page One Way Button Should Activated")
     @Test
     public void flightsPageOneWayButtonShouldActivated() throws IOException {
         flightsPage.fligtsOneWay();
