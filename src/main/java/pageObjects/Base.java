@@ -15,7 +15,7 @@ import java.util.concurrent.TimeUnit;
 public class Base {
     public WebDriver driver;
     WebDriverWait wait;
-    public CarRentalPage carRentalPage;
+    
     public FlightsPage flightsPage;
     public HomePage homePage;
     public LoginPage loginPage;
@@ -47,16 +47,16 @@ public class Base {
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         driver.manage().window().maximize();
         driver.manage().deleteAllCookies();
-        carRentalPage = new PageFactory().initElements(driver, CarRentalPage.class);
+       
         flightsPage = new PageFactory().initElements(driver, FlightsPage.class);
         homePage = new PageFactory().initElements(driver, HomePage.class);
         loginPage = new PageFactory().initElements(driver, LoginPage.class);
         signUpPage = new PageFactory().initElements(driver, SignUpPage.class);
     }
 
-   /* @AfterEach
+    @AfterEach
     public void driverQuit() throws Exception {
         driver.close();
         driver.quit();
-    }*/
+    }
 }
