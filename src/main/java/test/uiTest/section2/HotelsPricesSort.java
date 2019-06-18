@@ -7,7 +7,7 @@ import pageObjects.Base;
 
 import java.io.IOException;
 
-public class HotelsPrices extends Base {
+public class HotelsPricesSort extends Base {
     @DisplayName("TC-2006 Hotel Page Prices Should Displayed From Low To High")
     @Test
     public void hotelPricesShouldDisplayedFromLowToHigh() throws IOException, InterruptedException {

@@ -1,5 +1,6 @@
 package pageObjects;
 
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -53,9 +54,9 @@ public class Base {
         signUpPage = new PageFactory().initElements(driver, SignUpPage.class);
     }
 
-   /* @AfterEach
+    @AfterEach
     public void driverQuit() throws Exception {
         driver.close();
         driver.quit();
-    }*/
+    }
 }
