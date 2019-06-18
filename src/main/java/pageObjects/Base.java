@@ -5,7 +5,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -14,10 +13,10 @@ import java.util.concurrent.TimeUnit;
 
 public class Base {
     public WebDriver driver;
-    WebDriverWait wait;
-    public CarRentalPage carRentalPage;
+
     public FlightsPage flightsPage;
     public HomePage homePage;
+    public HotelsPage hotelsPage;
     public LoginPage loginPage;
     public SignUpPage signUpPage;
 
@@ -47,9 +46,9 @@ public class Base {
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         driver.manage().window().maximize();
         driver.manage().deleteAllCookies();
-        carRentalPage = new PageFactory().initElements(driver, CarRentalPage.class);
         flightsPage = new PageFactory().initElements(driver, FlightsPage.class);
         homePage = new PageFactory().initElements(driver, HomePage.class);
+        hotelsPage = new PageFactory().initElements(driver, HotelsPage.class);
         loginPage = new PageFactory().initElements(driver, LoginPage.class);
         signUpPage = new PageFactory().initElements(driver, SignUpPage.class);
     }
