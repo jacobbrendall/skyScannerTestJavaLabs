@@ -47,6 +47,7 @@ public class Base {
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         driver.manage().window().maximize();
         driver.manage().deleteAllCookies();
+
         flightsPage = new PageFactory().initElements(driver, FlightsPage.class);
         homePage = new PageFactory().initElements(driver, HomePage.class);
         hotelsPage = new PageFactory().initElements(driver, HotelsPage.class);
