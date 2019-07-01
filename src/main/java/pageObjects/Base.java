@@ -12,6 +12,8 @@ import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import static utilities.Log4j.endLog;
+
 public class Base {
     public WebDriver driver;
 
@@ -59,5 +61,6 @@ public class Base {
     public void driverQuit() throws Exception {
         driver.close();
         driver.quit();
+        endLog("");
     }
 }

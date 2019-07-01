@@ -5,6 +5,7 @@ Selenium grid
 Alert management
 Wait utils with js
 System variables
+
 Soft assertions
 Db prepared statement
 Read yaml with object mapper....YAMLfactory .... Bu data driven optionlari basligi altina konsun
